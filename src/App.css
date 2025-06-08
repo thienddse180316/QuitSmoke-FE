@@ -1,0 +1,137 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+#root {
+  margin: 0 auto;
+  width: 100vw;
+  height: 100%;
+  text-align: center;
+  background: #ffffff;
+  color: black;
+}
+
+#root p {
+  color: #4B5563;
+}
+
+#header {
+  color: black;
+  background: #F0FCF5;
+  width: 100%;
+  padding: 50px 0;
+  text-align: center;
+}
+
+#header h1 {
+  color: black;
+  margin: 0;
+}
+
+#header strong {
+  color: #16a34a
+}
+
+#header button {
+  margin: 0 10px;
+  border: 1px solid #16a34a
+}
+
+#header #button-left {
+  background: #16a34a;
+  color: white;
+}
+
+#header #button-right {
+  background: white;
+  color: #16a34a;
+}
+
+#box-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color :#16a34a;
+}
+
+#box-container .box-value {
+  padding: 0 20px;
+}
+
+#box-achievement-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+#box-achievement-container .box-achievement {
+  width: 350px;
+  height: 200px;
+  margin: 0 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+#box-achievement-container .icon {
+  color: #16a34a;
+}
+
+#box-achievement-container h4 {
+  margin: 12px 0 10px 0;
+}
+
+#box-achievement-container p {
+  margin: 0 10%;
+  text-align: center;
+  font-size: 15px;
+  color: #4B5563;
+}
+
+#box-achievement-container .icon-container {
+  background-color: #DCFCE7;
+  border-radius: 50%;
+  display: inline-flex;
+  width: 50px;
+  height: 50px;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  margin-top: 20px;
+}
+
+#benefit-container {
+  background: #16A34A;
+}
+
+#benefit-container h1 {
+  padding: 30px 0 0 0;
+  color: white;
+  margin: 100px 0 50px 0;
+
+}
+
+#benefit-container .benefit-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px 50px;
+}
+
+#benefit-container .benefit-column {
+  margin: 0 50px;
+  color: white;
+}
+
+#story-container {
+  display: flex;
+  justify-content: center;
+}
+
+#story-container .story{
+  width: 30%;
+  height: 10%;
+  margin: 20px 50px;
+}
