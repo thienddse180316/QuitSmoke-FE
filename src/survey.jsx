@@ -1,6 +1,6 @@
 import { NavBar } from "./dashBoard";
 
-function Servey() {
+function Survey() {
     return (
         <>
         <NavBar/>
@@ -9,4 +9,4 @@ function Servey() {
     )
 }
 
-export default Servey;
+export default Survey;
