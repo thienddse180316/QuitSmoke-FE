@@ -1,5 +1,6 @@
 
 import * as iconFeature from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 function BoxValue(props){
     return (
@@ -48,12 +49,14 @@ function Story(props){
 }
 
 function HomePage() {
+    const navigate = useNavigate();
+
     return (
         <>
         <div id="header">
         <h1>Nền tảng <strong>Cai nghiện</strong> thuốc lá</h1>
         <p>Hành trình cai nghiện thuốc lá của bạn bắt đầu từ đây. Theo dõi tiến độ, hoàn thành nhiệm vụ, và nhận được sự hỗ trợ từ chuyên gia và cộng đồng,</p>
-        <button id="button-left">Bắt đầu ngay miễn phí</button>
+        <button id="button-left" onClick={() => navigate('/servey')}>Bắt đầu ngay miễn phí</button>
         <button id="button-right">Xem gói dịch vụ</button>
         </div>
 
