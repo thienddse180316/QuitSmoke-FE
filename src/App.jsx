@@ -1,7 +1,7 @@
 import HomePage from './homePage.jsx'
 import './App.css'
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Servey from './servey.jsx';
+import Survey from './survey.jsx';
 import DashBoard from './dashBoard.jsx';
 import Diary from './diary.jsx';
 import Missions from './missions.jsx';
@@ -16,7 +16,7 @@ function App() {
     <>
     <BrowserRouter>
       <Routes>
-        <Route path='/servey' element={<Servey/>}/>
+        <Route path='/survey' element={<Survey/>}/>
         <Route path='/' element={<HomePage/>}/>
         <Route path='dashboard' element={<DashBoard/>} />
         <Route path='diary' element={<Diary/>} />

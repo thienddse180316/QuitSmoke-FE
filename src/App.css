@@ -103,6 +103,7 @@
 
 #benefit-container {
   background: #16A34A;
+  border-radius: 10px;
 }
 
 #benefit-container h1 {
@@ -146,4 +147,146 @@
   color:#16A34A;
   font-size: 22px;
 
+}
+
+#survey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
+#survey h2{
+  display: flex;
+  
+}
+
+#survey .input-class {
+  width: 50vw;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #16A34A;
+  padding: 0 10px;
+  display: flex;
+  background: white;
+  color: black;
+}
+
+#survey .input-class::-webkit-inner-spin-button,
+#survey .input-class::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#survey .input-class-date {
+  width: 50vw;
+  height: 40px;
+  border-radius: 5px;
+  border: 1px solid #16A34A;
+  padding: 0 10px;
+  background: white;
+  color: black;
+}
+
+#survey .input-class-date::-webkit-calendar-picker-indicator{
+  filter: invert(40%) sepia(70%) saturate(400%) hue-rotate(90deg);
+  cursor: pointer;
+}
+
+#survey .button-container {
+  width: 50vw;
+  display: flex;
+  justify-content: center;
+}
+
+#survey .button-container input {
+  width: 100%;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  background: #16A34A;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  margin: 20px auto 40px auto;
+}
+
+#survey form p {
+  text-align: left;
+}
+
+#survey .custom-radio {
+  position: relative;
+  padding-left: 30px;
+  cursor: pointer;
+  user-select: none;
+  display: inline-block;
+}
+
+#survey .custom-radio input[type="radio"]::-webkit-radio- {
+  -webkit-appearance: none;
+  position: absolute;
+  opacity: 1;
+  cursor: pointer;
+}
+
+Footer {
+  background: #F0FCF5;
+  color: black;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+.hero-section {
+  background: linear-gradient(to right, #16a34a, #2563eb); /* xanh lá -> xanh dương */
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+}
+
+.hero-title {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+#root .hero-subtitle {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  color: #f0fdf4; /* Màu chữ nhạt hơn */
+}
+
+#root .hero-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+#root .btn-primary {
+  background-color: white;
+  color: #16a34a;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+#root .btn-primary:hover {
+  background-color: #f0fdf4;
+}
+
+#root .hero-input {
+  padding: 10px 16px;
+  border-radius: 6px;
+  border: none;
+  width: 200px;
 }

@@ -48,6 +48,16 @@ function Story(props){
     );
 }
 
+function Footer() {
+    return (
+        <footer>
+            <p>© 2025 QuitSmoking. All rights reserved.</p>
+            <p>Liên hệ: <a href="mailto: pcuongvn101@gmail.com">pcuongvn101@gmail.com</a></p>
+            <p>Chính sách bảo mật | Điều khoản sử dụng</p>
+            </footer>
+    );
+}
+
 function HomePage() {
     const navigate = useNavigate();
 
@@ -56,8 +66,8 @@ function HomePage() {
         <div id="header">
         <h1>Nền tảng <strong>Cai nghiện</strong> thuốc lá</h1>
         <p>Hành trình cai nghiện thuốc lá của bạn bắt đầu từ đây. Theo dõi tiến độ, hoàn thành nhiệm vụ, và nhận được sự hỗ trợ từ chuyên gia và cộng đồng,</p>
-        <button id="button-left" onClick={() => navigate('/servey')}>Bắt đầu ngay miễn phí</button>
-        <button id="button-right">Xem gói dịch vụ</button>
+        <button id="button-left" onClick={() => navigate('/survey')}>Bắt đầu ngay miễn phí</button>
+        <button id="button-right" onClick={() => navigate("")}>Xem gói dịch vụ</button>
         </div>
 
         <div id="box-container">
@@ -103,7 +113,21 @@ function HomePage() {
             <Story className="story-box" image="https://via.placeholder.com/150" alt="Người dùng 1" star={5} title="Câu chuyện thành công" description="Tôi đã cai thuốc lá sau 10 năm hút thuốc. Nhờ có nền tảng này, tôi đã vượt qua được những cơn thèm thuốc và giờ đây tôi cảm thấy khỏe mạnh hơn bao giờ hết." name="Nguyễn Văn A"></Story>
             <Story className="story-box" image="https://via.placeholder.com/150" alt="Người dùng 2" star={4} title="Hành trình cai thuốc" description="Tôi đã thử nhiều lần nhưng không thành công. Nhưng với sự hỗ trợ từ cộng đồng và chuyên gia, tôi đã cai thuốc thành công." name="Trần Thị B"></Story>
         </div>
+
+        <div className="hero-section">
+      <h1 className="hero-title">Sẵn sàng thay đổi cuộc sống?</h1>
+      <p className="hero-subtitle">
+        Hãy bắt đầu hành trình cai thuốc lá của bạn ngay hôm nay. Hàng ngàn người đã thành công, bạn cũng có thể!
+      </p>
+      <div className="hero-buttons">
+        <button className="btn-primary" onClick={() => navigate("/survey")}>Bắt đầu miễn phí ngay</button>
+        <button className="btn-secondary" onClick={() => navigate("")}>Xem gói dịch vụ</button>
+      </div>
+    </div>
+
+        <Footer />
         </> 
     );
 }
 export default HomePage;
+export {Footer};
