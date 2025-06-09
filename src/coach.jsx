@@ -1,12 +1,13 @@
 import { NavBar } from "./dashBoard";
 
-function Servey() {
+function Coach() {
     return (
         <>
         <NavBar/>
-        <h1>Hello</h1>
+        <h1>Chuyên gia</h1>
         </>
+
     )
 }
 
-export default Servey;
+export default Coach;

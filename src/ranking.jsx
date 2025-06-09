@@ -1,12 +1,12 @@
 import { NavBar } from "./dashBoard";
 
-function Servey() {
+function Ranking() {
     return (
         <>
         <NavBar/>
-        <h1>Hello</h1>
+        <h1>Bảng xếp hạng</h1>
         </>
     )
 }
 
-export default Servey;
+export default Ranking;

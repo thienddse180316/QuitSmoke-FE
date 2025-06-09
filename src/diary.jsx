@@ -1,12 +1,12 @@
 import { NavBar } from "./dashBoard";
 
-function Servey() {
+function Diary() {
     return (
         <>
         <NavBar/>
-        <h1>Hello</h1>
+        <h1>Nhật ký</h1>
         </>
     )
 }
 
-export default Servey;
+export default Diary;

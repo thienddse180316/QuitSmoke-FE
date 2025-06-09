@@ -1,12 +1,12 @@
 import { NavBar } from "./dashBoard";
 
-function Servey() {
+function ServicePackage() {
     return (
         <>
         <NavBar/>
-        <h1>Hello</h1>
+        <h1>Gói dịch vụ</h1>
         </>
     )
 }
 
-export default Servey;
+export default ServicePackage;
