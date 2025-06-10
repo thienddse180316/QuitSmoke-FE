@@ -6,9 +6,9 @@ import DashBoard from './dashBoard.jsx';
 import Diary from './diary.jsx';
 import Missions from './missions.jsx';
 import Ranking from './ranking.jsx';
-import ServicePackage from './ServicePackage.jsx'
 import Coach from './coach.jsx';
-import Achievement from './achievement.jsx'
+import Achievement from './achievement.jsx';
+import ServicePackage from './ServicePackage.jsx';
 
 function App() {
 

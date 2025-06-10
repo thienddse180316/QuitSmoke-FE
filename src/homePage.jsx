@@ -67,7 +67,7 @@ function HomePage() {
         <h1>Nền tảng <strong>Cai nghiện</strong> thuốc lá</h1>
         <p>Hành trình cai nghiện thuốc lá của bạn bắt đầu từ đây. Theo dõi tiến độ, hoàn thành nhiệm vụ, và nhận được sự hỗ trợ từ chuyên gia và cộng đồng,</p>
         <button id="button-left" onClick={() => navigate('/survey')}>Bắt đầu ngay miễn phí</button>
-        <button id="button-right" onClick={() => navigate("")}>Xem gói dịch vụ</button>
+        <button id="button-right" onClick={() => navigate("/service-package")}>Xem gói dịch vụ</button>
         </div>
 
         <div id="box-container">
@@ -121,7 +121,7 @@ function HomePage() {
       </p>
       <div className="hero-buttons">
         <button className="btn-primary" onClick={() => navigate("/survey")}>Bắt đầu miễn phí ngay</button>
-        <button className="btn-secondary" onClick={() => navigate("")}>Xem gói dịch vụ</button>
+        <button className="btn-secondary" onClick={() => navigate("/service-package")}>Xem gói dịch vụ</button>
       </div>
     </div>
 
