@@ -145,6 +145,8 @@ function Coach() {
           
         </div>
       )}
+      <Footer />
+    </div>
     </>
   );
 }
