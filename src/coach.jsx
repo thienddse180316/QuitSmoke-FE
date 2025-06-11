@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { NavBar } from "./dashBoard";
 import './App.css';
+import {Footer} from "./homePage";
 
 const sampleCoaches = [
   {
@@ -140,8 +141,10 @@ function Coach() {
               </button>
             </div>
           </div>
+          
         </div>
       )}
+      <Footer />
     </>
   );
 }

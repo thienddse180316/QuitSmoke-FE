@@ -52,8 +52,6 @@ function Survey() {
                 <div className="button-container">
                     <input type="submit" value="Tiếp tục" />
                 </div>
-                
-                
                 </form>
                 <Footer />
         </div>
