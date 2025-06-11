@@ -1,3 +1,8 @@
+
+
+/* Mình để các phần custom CSS phía dưới để không ghi đè Tailwind */
+
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -21,7 +26,7 @@ a {
 a:hover {
   color: #535bf2;
 }
-
+ 
 body {
   margin: 0;
   display: flex;

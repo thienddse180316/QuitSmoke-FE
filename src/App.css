@@ -290,3 +290,155 @@ Footer {
   border: none;
   width: 200px;
 }
+
+/* COACH */
+.coach-container {
+  padding: 24px;
+}
+.coach-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.coach-card {
+  display: flex;
+  align-items: flex-start;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  gap: 16px;
+}
+.coach-avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+.coach-info {
+  flex: 1;
+}
+.coach-name {
+  font-size: 18px;
+  font-weight: 600;
+}
+.coach-slot-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+  margin-top: 8px;
+}
+.coach-slot {
+  font-size: 12px;
+  text-align: center;
+  padding: 4px;
+  border-radius: 4px;
+}
+.slot-booked {
+  background-color: #fecaca;
+  color: #991b1b;
+}
+.slot-available {
+  background-color: #bbf7d0;
+  color: #065f46;
+}
+.btn-booking {
+  align-self: center;
+  background-color: #3b82f6;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.btn-booking:hover {
+  background-color: #2563eb;
+}
+
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+.modal-content {
+  background: white;
+  padding: 24px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+}
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+.modal-section {
+  margin-bottom: 16px;
+}
+.modal-label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+.symptom-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.symptom-button {
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #e5e7eb;
+  cursor: pointer;
+}
+.symptom-button.selected {
+  background-color: #3b82f6;
+  color: white;
+  border-color: #3b82f6;
+}
+.slot-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  gap: 6px;
+}
+.slot-button {
+  font-size: 12px;
+  padding: 8px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  background: #f3f4f6;
+  cursor: pointer;
+}
+.slot-button.slot-active {
+  background-color: #2563eb;
+  color: white;
+}
+.slot-button.slot-disabled {
+  background-color: #d1d5db;
+  color: #6b7280;
+  cursor: not-allowed;
+}
+.modal-actions {
+  text-align: right;
+  margin-top: 16px;
+}
+.btn-cancel {
+  padding: 8px 16px;
+  margin-right: 8px;
+  background: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.btn-confirm {
+  padding: 8px 16px;
+  background-color: #22c55e;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
