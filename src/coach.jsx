@@ -51,6 +51,7 @@ function Coach() {
 
   return (
     <>
+    <div className="coach-page">
       <NavBar />
       <div className="coach-container">
         <h1 className="coach-title">Chuyên gia</h1>
@@ -144,7 +145,6 @@ function Coach() {
           
         </div>
       )}
-      <Footer />
     </>
   );
 }
