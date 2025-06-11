@@ -195,7 +195,7 @@
 }
 
 #survey .button-container {
-  width: 50vw;
+  width: 100%;
   display: flex;
   justify-content: center;
 }
@@ -453,4 +453,15 @@ Footer {
   box-sizing: border-box;
   background-color: #f9fafb; /* màu nền nhẹ */
   
+}
+
+#modalContent input {
+  width: 90%;
+  text-align: center;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: #f3f4f6; /* màu nền nhẹ */
+  border-color: #16A34A; /* màu viền nhẹ */
+  margin-bottom: 10px;
 }
