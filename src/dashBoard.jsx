@@ -194,7 +194,6 @@ function NavBar() {
             style={{
               marginBottom: 10,
               background: n.read ? '#f0f0f0' : '#e6ffed',
-              padding: 10,
               borderRadius: 8,
               cursor: 'pointer',
             }}>
