@@ -85,66 +85,60 @@ function Coach() {
       </div>
 
       {selected.coach && (
-        <div className="modal-overlay">
-          <div className="modal-content">
-            <h3 className="modal-title">Đặt lịch với {selected.coach.name}</h3>
-            <div className="modal-section">
-              <p className="modal-label">Triệu chứng:</p>
-              <div className="symptom-buttons">
-                {symptoms.map((s, i) => (
-                  <button
-                    key={i}
-                    onClick={() => setSelected({ ...selected, symptom: s })}
-                    className={`symptom-button ${
-                      selected.symptom === s ? "selected" : ""
+  <div className="modal-overlay">
+    <div className="modal-content">
+      <h3 className="modal-title">Đặt lịch với {selected.coach.name}</h3>
+      <div className="modal-section">
+        <p className="modal-label">Triệu chứng:</p>
+        <select
+          className="symptom-dropdown"
+          value={selected.symptom}
+          onChange={(e) => setSelected({ ...selected, symptom: e.target.value })}
+        >
+          <option value="">--Chọn triệu chứng--</option>
+          {symptoms.map((s, i) => (
+            <option key={i} value={s}>
+              {s}
+            </option>
+          ))}
+        </select>
+      </div>
+      <div className="modal-section">
+        <p className="modal-label">Chọn slot (7 ngày × 2 slot):</p>
+        <div className="slot-grid">
+          {Array.from({ length: 14 }).map((_, i) => {
+            const booked = selected.coach.bookedSlots.includes(i);
+            const active = selected.slot === i;
+            return (
+              <button
+                key={i}
+                disabled={booked}
+                onClick={() => setSelected({ ...selected, slot: i })}
+                className={`slot-button ${
+                  booked ? "slot-disabled" : active ? "slot-active" : ""
+                }`}
+              >
+                {booked
+                  ? "❌"
+                  : `${["T2", "T3", "T4", "T5", "T6", "T7", "CN"][Math.floor(i / 2)]} ${
+                      i % 2 === 0 ? "S" : "C"
                     }`}
-                  >
-                    {s}
-                  </button>
-                ))}
-              </div>
-            </div>
-            <div className="modal-section">
-              <p className="modal-label">Chọn slot (7 ngày × 2 slot):</p>
-              <div className="slot-grid">
-                {Array.from({ length: 14 }).map((_, i) => {
-                  const booked = selected.coach.bookedSlots.includes(i);
-                  const active = selected.slot === i;
-                  return (
-                    <button
-                      key={i}
-                      disabled={booked}
-                      onClick={() => setSelected({ ...selected, slot: i })}
-                      className={`slot-button ${
-                        booked
-                          ? "slot-disabled"
-                          : active
-                          ? "slot-active"
-                          : ""
-                      }`}
-                    >
-                      {booked
-                        ? "❌"
-                        : `${["T2", "T3", "T4", "T5", "T6", "T7", "CN"][Math.floor(i / 2)]} ${
-                            i % 2 === 0 ? "S" : "C"
-                          }`}
-                    </button>
-                  );
-                })}
-              </div>
-            </div>
-            <div className="modal-actions">
-              <button className="btn-cancel" onClick={closeModal}>
-                Hủy
               </button>
-              <button className="btn-confirm" onClick={confirm}>
-                Xác nhận
-              </button>
-            </div>
-          </div>
-          
+            );
+          })}
         </div>
-      )}
+      </div>
+      <div className="modal-actions">
+        <button className="btn-cancel" onClick={closeModal}>
+          Hủy
+        </button>
+        <button className="btn-confirm" onClick={confirm}>
+          Xác nhận
+        </button>
+      </div>
+    </div>
+  </div>
+)}
       <Footer />
     </div>
     </>

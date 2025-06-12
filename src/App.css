@@ -383,22 +383,21 @@ Footer {
   font-weight: 600;
   margin-bottom: 8px;
 }
-.symptom-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-}
-.symptom-button {
-  padding: 6px 12px;
+.symptom-dropdown {
+  width: 100%; /* Chiếm toàn bộ chiều rộng của modal-section */
+  padding: 8px;
   border-radius: 4px;
   border: 1px solid #ccc;
-  background: #e5e7eb;
+  background: #f3f4f6; /* Nền nhẹ tương tự các nút trước */
+  color: #000000; /* Màu chữ đen như yêu cầu trước */
+  font-size: 14px;
   cursor: pointer;
+  outline: none; /* Bỏ viền khi focus */
 }
-.symptom-button.selected {
-  background-color: #3b82f6;
-  color: white;
-  border-color: #3b82f6;
+
+.symptom-dropdown:focus {
+  border-color: #3b82f6; /* Viền xanh dương khi focus */
+  background: #ffffff; /* Nền trắng khi focus */
 }
 .slot-grid {
   display: grid;
@@ -468,4 +467,99 @@ Footer {
 
 }
 
+/* Đảm bảo tất cả văn bản trong modal có màu đen */
+.modal-content {
+  color: #000000; /* Màu chữ đen cho toàn bộ modal */
+}
 
+.modal-title {
+  color: #000000; /* Màu chữ đen cho tiêu đề modal */
+}
+
+.modal-label {
+  color: #000000; /* Màu chữ đen cho nhãn */
+}
+
+.symptom-button {
+  color: #000000; /* Màu chữ đen cho nút triệu chứng */
+}
+
+.symptom-button.selected {
+  color: #ffffff; /* Giữ màu trắng khi được chọn để dễ đọc */
+}
+
+.slot-button {
+  color: #000000; /* Màu chữ đen cho nút slot */
+}
+
+.slot-button.slot-active {
+  color: #ffffff; /* Giữ màu trắng khi được chọn để dễ đọc */
+}
+
+.slot-button.slot-disabled {
+  color: #6b7280; /* Giữ màu xám cho slot bị vô hiệu hóa để dễ phân biệt */
+}
+
+.btn-cancel {
+  color: #000000; /* Màu chữ đen cho nút Hủy */
+}
+
+.btn-confirm {
+  color: #ffffff; /* Giữ màu trắng cho nút Xác nhận để dễ đọc trên nền xanh */
+}
+
+/* Confirmation Pop-up */
+.confirmation-overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* Lớp phủ mờ */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1100; /* Cao hơn modal chính (z-index: 1000) */
+}
+
+.confirmation-content {
+  background: #ffffff; /* Nền trắng */
+  color: #000000; /* Chữ đen */
+  width: 400px; /* Chiều rộng 400px */
+  height: 800px; /* Chiều cao 800px */
+  padding: 24px;
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Căn giữa nội dung theo chiều dọc */
+  align-items: center; /* Căn giữa nội dung theo chiều ngang */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng nhẹ */
+}
+
+.confirmation-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  color: #000000; /* Chữ đen */
+}
+
+.confirmation-message {
+  font-size: 16px; /* Kích thước chữ vừa phải */
+  text-align: center; /* Căn giữa */
+  white-space: pre-line; /* Hỗ trợ xuống dòng trong thông báo */
+  margin-bottom: 24px;
+  color: #000000; /* Chữ đen */
+}
+
+.btn-ok {
+  background-color: #22c55e; /* Màu xanh lá cây */
+  color: #ffffff; /* Chữ trắng */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn-ok:hover {
+  background-color: #16a34a; /* Màu xanh lá đậm hơn khi hover */
+}
