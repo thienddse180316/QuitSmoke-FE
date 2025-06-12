@@ -523,7 +523,7 @@ Footer {
   background: #ffffff; /* Nền trắng */
   color: #000000; /* Chữ đen */
   width: 400px; /* Chiều rộng 400px */
-  height: 800px; /* Chiều cao 800px */
+  height: 200px; /* Chiều cao 800px */
   padding: 24px;
   border-radius: 12px;
   display: flex;
